@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Taschenrechner</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="calculator.css">
+		<script src="calculation.js"></script>
+		<script src="display.js"></script>
+		<script src="calculator.js"></script>
+	</head>
+	<body onload="init()">
+		<div id="calculator">
+			<div id="display"></div>
+			<table id="buttons">
+				<tr>
+					<td onclick="add('7');" >7</td>
+					<td onclick="add('8');" >8</td>
+					<td onclick="add('9');">9</td>
+					<td onclick="add('/');">/</td>
+				<tr>
+				<tr>
+					<td onclick="add('4');">4</td>
+					<td onclick="add('5');">5</td>
+					<td onclick="add('6');">6</td>
+					<td onclick="add('*');">*</td>
+				<tr>
+				<tr>
+					<td onclick="add('1');">1</td>
+					<td onclick="add('2');">2</td>
+					<td onclick="add('3');">3</td>
+					<td onclick="add('-');">-</td>
+				<tr>
+				<tr>
+					<td onclick="add('0');">0</td>
+					<td onclick="add('(');">(</td>
+					<td onclick="add(')');">)</td>
+					<td onclick="add('+');">+</td>
+				<tr>
+				<tr>
+					<td onclick="add('.');">,</td>
+					<td onclick="calculate()" colspan="2">Enter</td>
+					<td onclick="back()">&#8592;</td>
+				<tr>
+			</table>
+		</div>
+	</body>
+</html>
