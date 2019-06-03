@@ -5,8 +5,8 @@ function init() {
 }
 
 function add(char){
-	calculation.add(char);
 	addToDisplay(char);
+	calculation.add(char);
 }
 
 function calculate() {

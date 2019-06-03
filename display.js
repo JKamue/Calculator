@@ -6,7 +6,7 @@ function initDisplay() {
 
 function addToDisplay(character) {
 	if(result) {
-		clearDisplay();
+		calculation.add(display.innerHTML);
 		result = false;
 		display.style.textAlign = "left";
 	}
