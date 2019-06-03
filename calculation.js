@@ -10,7 +10,12 @@ function Calculation() {
 	}
 	
 	this.getResult = function() {
-		display.innerHTML = eval(this.string);
+		try {
+			display.innerHTML = eval(this.string);
+		}
+		catch(err) {
+			alert("Syntax error");
+		}
 		display.style.textAlign = "right";
 		result = true;
 		this.clear();
